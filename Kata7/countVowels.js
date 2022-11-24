@@ -1,0 +1,14 @@
+function VowelNumbers(str) {
+  let vowelsCount = 0
+  let vowels = ["a", "e", "o", "i", "u"]
+  for (var i = 0; i < str.length; i++) {
+    for (var j = 0; j < vowels.length; j++) {
+      if (str[i] === vowels[j]) {
+        vowelsCount++
+      }
+    }
+  }
+
+  return vowelsCount
+}
+console.log(VowelNumbers("nadine ahmed gamal el din"))
